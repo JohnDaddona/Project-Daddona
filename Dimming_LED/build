@@ -1,0 +1,6 @@
+#!/bin/bash
+
+config-pin p9.22 pwm
+
+
+g++ subscribe.cpp PWM.cpp util.cpp -o subscribe -lpaho-mqtt3c 
